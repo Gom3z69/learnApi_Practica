@@ -43,7 +43,7 @@ public class UserController {
         Page<UserDTO> users = service.getAllUsers(page, size);
         if (users == null){
             ResponseEntity.badRequest().body(Map.of(
-                    "status", "Error al obtener los datos"
+                    "status", "Error al obtener los datos xd"
             ));
         }
         return ResponseEntity.ok(ApiResponse.success("Datos consultados correctamente", users));
